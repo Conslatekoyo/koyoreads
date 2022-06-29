@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="Portfolio.css">
+    
+
+</head>
+<body>
+   <header>
+       <ul>
+        <li><a href="Home.html"> Home </a></li>
+          <li><a href="AboutUs.html"> About Us </a></li>
+          <li><a href="Ourteam.html"> Our Team </a></li>
+          <li><a href="Portfolio.html" class="active-btn"> Portfolio </a></li>
+          <li><a href="ContactUs.html"> Contact Us </a></li>
+       </ul>
+     </header>
+ 
+    <div class="container">
+        <div class="column active">
+            <div class="content">
+                <h1>1</h1>
+                <div class="box">
+                    <h2><u><i>BOOKQUET</i></u></h2>
+                    <p><br></p>
+                    <p><i>With inspiration from gift ideas.The bookquet of love aims to combine the taste of bibliophiles with a touch of love. All of which are custom-made with love and goodness. Available all year round , the package can be gifted to those you love.</i></p>
+
+                </div>
+            </div>
+            <div class="bg bg1"></div>
+        </div>
+        <div class="column">
+           <div class="content">
+               <h1>2</h1>
+               <div class="box">
+                   <h2><u><i>BOOK A BOOKPOD</i></u></h2>
+                   <p><i>Having trouble working from home? Worry not because we got you. You can now book a bookpod as comfortable as home. All our pods have sound-proof walls for you to concentrate on your work and avoid disractions as you enjoy your private space. </i></p>
+               </div>
+           </div>
+           <div class="bg bg2"></div>
+       </div>
+       <div class="column">
+           <div class="content">
+               <h1>3</h1>
+               <div class="box">
+                   <h2><u><i>BOOKCACIES</i></u></h2>
+                   <p><i>Who said you can't get a chance to enjoy a scrumptious meal as you dive within the pages. The bookcacies caters for all your stomach needs as you feed your brain</i></p>
+               </div>
+           </div>
+           <div class="bg bg3"></div>
+       </div>
+       <div class="column">
+           <div class="content">
+               <h1>4</h1>
+               <div class="box">
+                   <h2><u><i>JOIN BOOK CLUBS</i></u></h2>
+                   <p><i>Your book taste is a s strong as your book friends.Join the book community today and get a chance to share the book insights and sad endings with a community of book lovers.</i></p>
+               </div>
+           </div>
+           <div class="bg bg4"></div>
+       </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).on('mouseover', '.container .column', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+   </script>
+</body>
+</html>
